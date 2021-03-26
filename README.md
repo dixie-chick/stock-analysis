@@ -1,19 +1,4 @@
-# stock-analysis
-Performing stock analysis on DQ if a sound investment
-Overview of Project: Explain the purpose of this analysis.
-
-## Can a Visual Basic Macro be refactored for increased efficiency?
-    - This stock analysis through VBA provides a snapshot of performance across 12 stocks during 2017 and 2018 to make an informative decision  of a sound long term investment.
-    - First a code was created to run a value analysis on DQ stock
-    - Next the code was reused, now focusing on All Stocks
-    - Then a code initialized an index to loop through 12 tickers
-    -   Within this loop, ticker starting and ending prices were assigned based off of the Ticker Index
-    - Finally, the anaylsis runs evaluating performance across the stock array for 2017 & 2018
-   
-   
-        
-
-  Before Refactor
+Before Refactor
         ![2018_Original](https://user-images.githubusercontent.com/79612565/112698808-bbd43180-8e47-11eb-9dff-fe8c09121996.png)
 
 
