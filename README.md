@@ -5,14 +5,11 @@ Overview of Project: Explain the purpose of this analysis.
 ## Can a Visual Basic Macro be refactored for increased efficiency?
     - This stock analysis through VBA provides a snapshot of performance across 12 stocks during 2017 and 2018 to make an informative decision  of a sound long term investment.
     - First a code was created to run a value analysis on DQ stock
-    
-    Sub DQAnalysis()
-
-    Worksheets("DQ Analysis").Activate
-    
-    Range("A1").Value = "DAQO (Ticker: DQ)"
-
-    - Next a code initialized an index to loop through the tickers
+    - Next the code was reused, now focusing on All Stocks
+    - Then a code initialized an index to loop through 12 tickers
+    -   Within this loop, ticker starting and ending prices were assigned based off of the Ticker Index
+    - Finally, the anaylsis runs evaluating performance across the stock array for 2017 & 2018
+   
     '1a) Create a ticker Index
     
     tickerIndex = 0
@@ -38,7 +35,7 @@ Overview of Project: Explain the purpose of this analysis.
         
         tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
         
-       - Then the code was reused 
+    
        
         '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
@@ -70,9 +67,8 @@ Overview of Project: Explain the purpose of this analysis.
         Cells(4 + i, 2).Value = tickerVolumes(i)
         Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
         
-    - Finally the code was refactored to determine if the script runs more efficiently, measuring performance
 
-            Before Refactor
+  Before Refactor
         ![2018_Original](https://user-images.githubusercontent.com/79612565/112698808-bbd43180-8e47-11eb-9dff-fe8c09121996.png)
 
 
