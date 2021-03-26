@@ -11,7 +11,7 @@ Overview of Project: Explain the purpose of this analysis.
     - Finally, the anaylsis runs evaluating performance across the stock array for 2017 & 2018
    
 
-        ![2018_Original](https://user-images.githubusercontent.com/79612565/112698808-bbd43180-8e47-11eb-9dff-fe8c09121996.png)
+![2018_Original](https://user-images.githubusercontent.com/79612565/112698808-bbd43180-8e47-11eb-9dff-fe8c09121996.png)
 
 
 ## Results of Refactor with Efficient Performance
