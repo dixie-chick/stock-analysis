@@ -1,8 +1,18 @@
 # stock-analysis
 Performing stock analysis on DQ if a sound investment
 Overview of Project: Explain the purpose of this analysis.
-Results: Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 
+## Can a Visual Basic Macro be refactored for increased efficiency?
+    - This stock analysis through VBA provides a snapshot of performance across 12 stocks during 2017 and 2018 to make an informative decision  of a sound long term investment.
+    - First a code was created to run a value analysis on DQ stock
+    
+    Sub DQAnalysis()
+
+    Worksheets("DQ Analysis").Activate
+    
+    Range("A1").Value = "DAQO (Ticker: DQ)"
+
+    - Next a code initialized an index to loop through the tickers
     '1a) Create a ticker Index
     
     tickerIndex = 0
@@ -12,8 +22,6 @@ Results: Using images and examples of your code, compare the stock performance b
     Dim tickerVolumes(12) As Long
     Dim tickerStartingPrices(12) As Single
     Dim tickerEndingPrices(12) As Single
-    
-    
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
     
         For i = 0 To 11
@@ -30,8 +38,8 @@ Results: Using images and examples of your code, compare the stock performance b
         
         tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
         
-        
-        
+       - Then the code was reused 
+       
         '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
             If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
@@ -52,8 +60,7 @@ Results: Using images and examples of your code, compare the stock performance b
                 tickerIndex = tickerIndex + 1
                 
             End If
-    
-    Next i
+
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
     For i = 0 To 11
@@ -63,6 +70,17 @@ Results: Using images and examples of your code, compare the stock performance b
         Cells(4 + i, 2).Value = tickerVolumes(i)
         Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
         
-Summary: In a summary statement, address the following questions.
+    - Finally the code was refactored to determine if the script runs more efficiently, measuring performance
+
+            Before Refactor
+        ![2018_Original](https://user-images.githubusercontent.com/79612565/112698808-bbd43180-8e47-11eb-9dff-fe8c09121996.png)
+
+
+## Results of Refactor with Efficient Performance
+![VBA_Challenge_2017_Refactored](https://user-images.githubusercontent.com/79612565/112692273-e5875b80-8e3b-11eb-9cae-95b29daf6cdc.png)
+![VBA_Challenge_2018_Refactored](https://user-images.githubusercontent.com/79612565/112692275-e8824c00-8e3b-11eb-9a46-b841ac7136f7.png)
+
+
+## Summary: In a summary statement, address the following questions.
 What are the advantages or disadvantages of refactoring code?
 How do these pros and cons apply to refactoring the original VBA script?
