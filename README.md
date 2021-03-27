@@ -103,7 +103,6 @@ Sub DQAnalysis()
 
 ## YES! Refactored VBA has successfully increased efficiency
 
-## Pros & Cons of Refactoring
 # What are the advantages or disadvantages of refactoring code?
 Advantages include: 
 1. Increased speed when running
