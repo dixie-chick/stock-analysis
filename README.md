@@ -4,7 +4,7 @@ This stock analysis using Excel's VBA function provides a performance snapshot f
 - First, a code was created to run specifically on DQ ticker performance
 - Next the code was reused to focus on All Stocks in the index
 - Then, a code initialized the index to loop through all 12 tickers
-      -Within this loop, ticker starting and ending prices were assigned based off the Ticker Index
+     Within this loop, ticker starting and ending prices were assigned based off the Ticker Index
 - Finally, the analysis runs evaluating performance across the stock array for 2017 and 2018
 
 
